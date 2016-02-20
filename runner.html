@@ -1,0 +1,22 @@
+<html>
+<head>
+	<script src="common/swap.js"></script>
+	<script src="selection-sort.js"></script>
+	<script src="insertion-sort.js"></script>
+    <script src="bubble-sort.js"></script>
+	<script src="merge-sort.js"></script>
+</head>
+<body>
+	<script>
+		unsortedList = []
+	    for(var a = 0; a < 1000; a++) {
+			unsortedList.push(Math.round(Math.random() * 100) + 1)
+		}
+
+		console.log(selectionSort(unsortedList.slice()));
+		console.log(insertionSort(unsortedList.slice()));
+		console.log(bubbleSort(unsortedList.slice()));
+		console.log(mergeSort(unsortedList.slice()));
+	</script>
+</body>
+</html>
